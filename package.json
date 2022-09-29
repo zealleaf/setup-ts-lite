@@ -1,19 +1,20 @@
 {
   "name": "setup-ts-lite",
+  "type": "module",
   "version": "0.0.0",
+  "packageManager": "pnpm@7.12.0",
   "description": "",
-  "keywords": [],
+  "author": "zealleaf",
+  "license": "MIT",
   "homepage": "https://github.com/zealleaf/setup-ts-lite#readme",
-  "bugs": {
-    "url": "https://github.com/zealleaf/setup-ts-lite/issues"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zealleaf/setup-ts-lite.git"
   },
-  "license": "MIT",
-  "author": "zealleaf",
-  "type": "module",
+  "bugs": {
+    "url": "https://github.com/zealleaf/setup-ts-lite/issues"
+  },
+  "keywords": [],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -39,8 +40,8 @@
   "scripts": {
     "build": "unbuild",
     "dev": "unbuild --stub",
-    "lint": "eslint .",
-    "lint:fix": "nr lint -- --fix",
+    "lint": "eslint ./",
+    "lint:fix": "eslint --fix --ext .ts,.tsx --quiet ./",
     "prepublishOnly": "nr build",
     "release": "bumpp",
     "start": "esno src/index.ts",
@@ -59,6 +60,5 @@
     "unbuild": "^0.8.11",
     "vite": "^3.1.2",
     "vitest": "^0.23.4"
-  },
-  "packageManager": "pnpm@7.12.0"
+  }
 }
