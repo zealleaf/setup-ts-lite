@@ -40,8 +40,8 @@
   "scripts": {
     "build": "unbuild",
     "dev": "unbuild --stub",
-    "lint": "eslint ./",
-    "lint:fix": "eslint --fix --ext .ts,.tsx --quiet ./",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint --fix --ext .ts,.tsx --quiet ./src",
     "prepublishOnly": "nr build",
     "release": "bumpp",
     "start": "esno src/index.ts",
