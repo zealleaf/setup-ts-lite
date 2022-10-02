@@ -30,13 +30,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{secrets.SETUP_GITHUB_TOKEN}}
 
-      - name: Setup
-        run: npm i -g @antfu/ni
+      # - name: Setup
+      #   run: npm i -g @antfu/ni
 
-      - name: Install
-        run: nci
+      # - name: Install
+      #   run: nci
 
-      - name: Publish to NPM
-        run: na publish --access public --no-git-checks
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.SETUP_NPM_TOKEN}}
+      # - name: Publish to NPM
+      #   run: na publish --access public --no-git-checks
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{secrets.SETUP_NPM_TOKEN}}
